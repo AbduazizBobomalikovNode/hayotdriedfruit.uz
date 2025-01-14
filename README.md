@@ -1,5 +1,5 @@
 
-# Hayot Dried Fruit - Rasmiy Sayti
+# [Hayot Dried Fruit](https://hayotdriedfruit.uz/) - Rasmiy Sayti
 
 **Quruq mevalar, yong'oqlar va o'zaklarni sotadigan saytda.**  
 Ushbu sayt quruq mevalar, yong'oqlar va o'zaklarni sotish uchun mo'ljallangan. Sayt uchta tilda mavjud: **O'zbekcha (UZ), Ruscha (RU), va Inglizcha (ENG)**. Bu oddiy HTML, CSS, va JavaScript yordamida yaratilgan statik sayt bo'lib, Node.js ishlatilmagan.
@@ -25,6 +25,12 @@ Ushbu sayt quruq mevalar, yong'oqlar va o'zaklarni sotish uchun mo'ljallangan. S
    git clone https://github.com/AbduazizBobomalikovNode/hayotdriedfruit.uz
    ```
 2. `index.html` faylini brauzeringizda ochib saytingizni ko'ring.
+
+## 📧 Bog'lanish
+
+Loyiha haqida savollaringiz bo'lsa, quyidagi manzilga murojaat qiling:
+- **Muallif:** [Abduaziz Bobomalikov](https://github.com/AbduazizBobomalikovNode)
+- **Telegram:** [@AbduazizBobomalikov](https://t.me/@Bobomalikov_Abduaziz)
 
 ## Litsenziya
 Ushbu loyiha MIT Litsenziyasi ostida litsenziyalanadi - batafsil ma'lumot uchun [LICENSE](LICENSE) faylini ko'ring.
