@@ -495,3 +495,64 @@
 }
 /*** Footer End ***/
 
+
+
+/*** Accessibility Start ***/
+/* Visible keyboard focus indicator (shown for keyboard users only) */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible,
+[tabindex]:focus-visible,
+.btn:focus-visible,
+.nav-link:focus-visible,
+.form-control:focus-visible {
+    outline: 3px solid var(--bs-dark);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, .85);
+}
+
+/* Dark backgrounds (footer, copyright): use the light accent for contrast */
+.footer a:focus-visible,
+.footer button:focus-visible,
+.footer input:focus-visible,
+.copyright a:focus-visible {
+    outline-color: var(--bs-secondary);
+    box-shadow: none;
+}
+
+/* Respect the user's reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto !important;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        animation-delay: 0s !important;
+        transition-duration: 0.01ms !important;
+        transition-delay: 0s !important;
+        scroll-behavior: auto !important;
+    }
+
+    /* WOW.js / animate.css effects: show content immediately, no motion */
+    .wow,
+    .animated,
+    [class*="animate__"] {
+        animation: none !important;
+        transition: none !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+    /* Keep the page-load spinner from fading in/out */
+    #spinner {
+        transition: none !important;
+    }
+}
+/*** Accessibility End ***/

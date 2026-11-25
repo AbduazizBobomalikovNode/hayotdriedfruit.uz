@@ -1,6 +1,9 @@
 (function ($) {
     "use strict";
 
+    // Respect the visitor's reduced-motion preference
+    var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
     // Spinner
     var spinner = function () {
         setTimeout(function () {
@@ -39,14 +42,28 @@
     }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({scrollTop: 0}, reduceMotion ? 0 : 1500, 'easeInOutExpo');
         return false;
     });
 
 
+    // Accessible names for the Owl Carousel prev/next buttons
+    var labelOwlNav = function (event) {
+        var $el = $(event.target);
+        var lang = document.documentElement.lang;
+        var labels = {
+            ru: ['Назад', 'Вперёд'],
+            uz: ['Oldingi', 'Keyingi'],
+            en: ['Previous', 'Next']
+        }[lang] || ['Previous', 'Next'];
+        $el.find('.owl-prev').attr('aria-label', labels[0]);
+        $el.find('.owl-next').attr('aria-label', labels[1]);
+    };
+
+
     // Testimonial carousel
     $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
+        autoplay: !reduceMotion,
         smartSpeed: 2000,
         center: false,
         dots: true,
@@ -57,6 +74,7 @@
             '<i class="bi bi-arrow-left"></i>',
             '<i class="bi bi-arrow-right"></i>'
         ],
+        onInitialized: labelOwlNav,
         responsiveClass: true,
         responsive: {
             0:{
@@ -80,7 +98,7 @@
 
     // vegetable carousel
     $(".vegetable-carousel").owlCarousel({
-        autoplay: true,
+        autoplay: !reduceMotion,
         smartSpeed: 1500,
         center: false,
         dots: true,
@@ -91,6 +109,7 @@
             '<i class="bi bi-arrow-left"></i>',
             '<i class="bi bi-arrow-right"></i>'
         ],
+        onInitialized: labelOwlNav,
         responsiveClass: true,
         responsive: {
             0:{

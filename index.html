@@ -26,7 +26,7 @@
         
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
-        <link rel="icon" type="image/x-icon" href="/img/dry_fruits/fav_icon1.ico">
+        <link rel="icon" type="image/x-icon" href="img/dry_fruits/fav_icon1.ico">
     </head>
 
     <body>
@@ -52,20 +52,20 @@
             <div class="container px-0">
                 <nav class="navbar navbar-light bg-white navbar-expand-xl">
                     <a href="index.html" class="navbar-brand"><h1 class="text-primary display-6">Hayot Dried Fruit</h1></a>
-                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-label="Toggle navigation" aria-controls="navbarCollapse" aria-expanded="false">
                         <span class="fa fa-bars text-primary"></span>
                     </button>
                     <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
                         <div class="navbar-nav mx-auto">
-                            <a href="index.html" class="nav-item nav-link active">Home</a>
+                            <a href="index.html" class="nav-item nav-link active" aria-current="page">Home</a>
                             <a href="./lang/en/products.html" class="nav-item nav-link">Products</a>
                             <a href="./lang/en/about.html" class="nav-item nav-link">About Us</a>
                             <a href="./lang/en/contact.html" class="nav-item nav-link">Contact</a>
                         </div>
-                        <div class="d-flex m-3 me-0">
-                            <button onclick="location.href = './index.html'" class="btn-search btn border border-secondary btn-md-square rounded-circle bg-secondary me-4" data-bs-toggle="modal" >en</button>
-                            <button onclick="location.href = './lang/ru/index.html'" class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" >ru</button>
-                            <button onclick="location.href = './lang/uz/index.html'" class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" >uz</button>
+                        <div class="d-flex m-3 me-0" role="group" aria-label="Language">
+                            <button type="button" onclick="location.href = './index.html'" class="btn-search btn border border-secondary btn-md-square rounded-circle bg-secondary me-4" lang="en" aria-label="English" aria-current="true">en</button>
+                            <button type="button" onclick="location.href = './lang/ru/index.html'" class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" lang="ru" aria-label="Русский">ru</button>
+                            <button type="button" onclick="location.href = './lang/uz/index.html'" class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" lang="uz" aria-label="Oʻzbekcha">uz</button>
                             <!-- <a href="#" class="position-relative me-4 my-auto">
                                 <i class="fa fa-shopping-bag fa-2x"></i>
                                 <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
@@ -92,7 +92,7 @@
                     </div>
                     <div class="modal-body d-flex align-items-center">
                         <div class="input-group w-75 mx-auto d-flex">
-                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1" aria-label="keywords">
                             <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
                         </div>
                     </div>
@@ -110,7 +110,7 @@
                         <h4 class="mb-3 text-secondary">Best Dried Fruits</h4>
                         <h1 class="mb-5 display-3 text-primary">Hayot Dried Fruit and Spices LLC</h1>
                         <div class="position-relative mx-auto">
-                            <input class="form-control border-2 border-secondary w-75 py-3 px-4 rounded-pill" type="number" placeholder="Search">
+                            <input class="form-control border-2 border-secondary w-75 py-3 px-4 rounded-pill" type="number" placeholder="Search" aria-label="Search">
                             <button type="submit" class="btn btn-primary border-2 border-secondary py-3 px-4 position-absolute rounded-pill text-white h-100" style="top: 0; right: 25%;">Submit Now</button>
                         </div>
                     </div>
@@ -118,11 +118,11 @@
                         <div id="carouselId" class="carousel slide position-relative" data-bs-ride="carousel">
                             <div class="carousel-inner" role="listbox">
                                 <div class="carousel-item active rounded">
-                                    <img src="img/dry_fruits/product_main.jpg" class="img-fluid w-100 h-100 bg-secondary rounded" alt="First slide">
+                                    <img src="img/dry_fruits/product_main.jpg" class="img-fluid w-100 h-100 bg-secondary rounded" alt="Dried Fruit">
                                     <a href="#" class="btn px-4 py-2 text-white rounded">Dried Fruit</a>
                                 </div>
                                 <div class="carousel-item rounded">
-                                    <img src="img/dry_fruits/spices_main.jpeg" class="img-fluid w-100 h-100 rounded" alt="Second slide">
+                                    <img src="img/dry_fruits/spices_main.jpeg" class="img-fluid w-100 h-100 rounded" alt="Spices">
                                     <a href="#" class="btn px-4 py-2 text-white rounded">Spices</a>
                                 </div>
                             </div>
@@ -243,7 +243,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/product_n1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/product_n1.jpg" class="img-fluid w-100 rounded-top" alt="Dried apricot (all varieties)" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Dried Fruit</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -256,7 +256,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/product_n2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/product_n2.jpg" class="img-fluid w-100 rounded-top" alt="Dried plum (with pits)" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Dried Fruit</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -269,7 +269,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/product_n3.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/product_n3.jpg" class="img-fluid w-100 rounded-top" alt="Yellow raisins (Golden hybrid) 1st grade" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Dried Fruit</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -282,7 +282,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/product_n4.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/product_n4.jpg" class="img-fluid w-100 rounded-top" alt="Dried plum (pitted)" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Dried Fruit</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -297,7 +297,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/spices_n1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/spices_n1.jpg" class="img-fluid w-100 rounded-top" alt="Sesame is white" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Spices</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -310,7 +310,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/spices_n2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/spices_n2.jpg" class="img-fluid w-100 rounded-top" alt="Pepper is bitter" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Spices</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -322,7 +322,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/spices_n3.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/spices_n3.jpg" class="img-fluid w-100 rounded-top" alt="Pepper mill is bitter" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Spices</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -334,7 +334,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/spices_n4.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/spices_n4.jpg" class="img-fluid w-100 rounded-top" alt="Peppermint is sweet" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Spices</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -348,7 +348,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/Peanut_Nuts_n1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/Peanut_Nuts_n1.jpg" class="img-fluid w-100 rounded-top" alt="Blanched peanuts (petals)" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Peanut</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -361,7 +361,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/Peanut_Nuts_n2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/Peanut_Nuts_n2.jpg" class="img-fluid w-100 rounded-top" alt="Blanched crushed peanuts premium 2-4/3-5 mm" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Peanut</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -374,7 +374,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/Peanut_Nuts_n9.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/Peanut_Nuts_n9.jpg" class="img-fluid w-100 rounded-top" alt="Italian Pecan Nut, not peeled" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Nut</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -387,7 +387,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/Peanut_Nuts_n10.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/Peanut_Nuts_n10.jpg" class="img-fluid w-100 rounded-top" alt="Italian Pecan Nut, Shelled" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Nut</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -402,7 +402,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/groats_n1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/groats_n1.jpg" class="img-fluid w-100 rounded-top" alt="Mung bean (all varieties)" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Groats</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -415,7 +415,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/groats_n2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/groats_n2.jpg" class="img-fluid w-100 rounded-top" alt="Roasted chickpeas" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Groats</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -427,7 +427,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/groats_n3.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/groats_n3.jpg" class="img-fluid w-100 rounded-top" alt="Chickpeas Iranian" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Groats</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -439,7 +439,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/groats_n4.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/groats_n4.jpg" class="img-fluid w-100 rounded-top" alt="Chickpea Star" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Groats</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -461,7 +461,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/product_n1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/product_n1.jpg" class="img-fluid w-100 rounded-top" alt="Dried apricot (all varieties)" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Dried Fruit</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -474,7 +474,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/product_n2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/product_n2.jpg" class="img-fluid w-100 rounded-top" alt="Dried plum (with pits)" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Dried Fruit</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -487,7 +487,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/product_n3.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/product_n3.jpg" class="img-fluid w-100 rounded-top" alt="Yellow raisins (Golden hybrid) 1st grade" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Dried Fruit</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -500,7 +500,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/product_n4.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/product_n4.jpg" class="img-fluid w-100 rounded-top" alt="Dried plum (pitted)" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Dried Fruit</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -513,7 +513,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/product_n5.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/product_n5.jpg" class="img-fluid w-100 rounded-top" alt="Dried apple" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Dried Fruit</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -526,7 +526,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/product_n6.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/product_n6.jpg" class="img-fluid w-100 rounded-top" alt="Raisin Brown" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Dried Fruit</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -539,7 +539,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/product_n7.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/product_n7.jpg" class="img-fluid w-100 rounded-top" alt="Raisins are black" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Dried Fruit</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -552,7 +552,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/product_n8.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/product_n8.jpg" class="img-fluid w-100 rounded-top" alt="Mixture of Dried Fruits" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Dried Fruit</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -565,7 +565,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/product_n9.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/product_n9.jpg" class="img-fluid w-100 rounded-top" alt="Dried unabi (chemon zhiyda)" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Dried Fruit</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -578,7 +578,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/product_n10.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/product_n10.jpg" class="img-fluid w-100 rounded-top" alt="Dried unabi (non zhiyda)" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Dried Fruit</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -591,7 +591,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/product_n11.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/product_n11.jpg" class="img-fluid w-100 rounded-top" alt="Dried cherries" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Dried Fruit</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -604,7 +604,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/product_n12.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/product_n12.jpg" class="img-fluid w-100 rounded-top" alt="Dried cherries (pitted)" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Dried Fruit</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -617,7 +617,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/product_n13.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/product_n13.jpg" class="img-fluid w-100 rounded-top" alt="Dried rose hips" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Dried Fruit</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -650,7 +650,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/product_n14.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/product_n14.jpg" class="img-fluid w-100 rounded-top" alt="Kishmish kunakaki 2 varieties" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Dried Fruit</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -663,7 +663,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/product_n15.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/product_n15.jpg" class="img-fluid w-100 rounded-top" alt="Kishmish soyaki" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Dried Fruit</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -676,7 +676,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/product_n16.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/product_n16.jpg" class="img-fluid w-100 rounded-top" alt="Kishmish objush" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Dried Fruit</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -689,7 +689,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/product_n17.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/product_n17.jpg" class="img-fluid w-100 rounded-top" alt="Kishmish Kalifar hybrid" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Dried Fruit</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -702,7 +702,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/product_n18.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/product_n18.jpg" class="img-fluid w-100 rounded-top" alt="Kishmish Kalifar 1 variety" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Dried Fruit</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -715,7 +715,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/product_n19.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/product_n19.jpg" class="img-fluid w-100 rounded-top" alt="Kishmish Gigant" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Dried Fruit</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -726,7 +726,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/product_n20.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/product_n20.jpg" class="img-fluid w-100 rounded-top" alt="Kuraga Subhoni 1 sort" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Dried Fruit</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -737,7 +737,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/product_n21.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/product_n21.jpg" class="img-fluid w-100 rounded-top" alt="Jilon is in a hurry" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Dried Fruit</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -748,7 +748,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/product_n22.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/product_n22.jpg" class="img-fluid w-100 rounded-top" alt="Sultana 1 variety" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Dried Fruit</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -759,7 +759,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/product_n23.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/product_n23.jpg" class="img-fluid w-100 rounded-top" alt="Natural leaf" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Dried Fruit</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -770,7 +770,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/product_n24.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/product_n24.jpg" class="img-fluid w-100 rounded-top" alt="200 plums" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Dried Fruit</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -781,7 +781,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/product_n3_s1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/product_n3_s1.jpg" class="img-fluid w-100 rounded-top" alt="Yellow currant (Golden hybrid) 2nd class" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Dried Fruit</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -792,7 +792,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/product_n3_s2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/product_n3_s2.jpg" class="img-fluid w-100 rounded-top" alt="Raisin Yellow (Golden hybrid) Premium variety" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Dried Fruit</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -803,7 +803,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/product_n3_s3.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/product_n3_s3.jpg" class="img-fluid w-100 rounded-top" alt="Yellow raisin (Califar) 2nd class" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Dried Fruit</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -814,7 +814,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/product_n3_s4.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/product_n3_s4.jpg" class="img-fluid w-100 rounded-top" alt="Yellow raisin (Califar) 3rd class" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Dried Fruit</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -825,7 +825,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/product_n3_s5.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/product_n3_s5.jpg" class="img-fluid w-100 rounded-top" alt="Raisin yellow (Califar) Premium grade" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Dried Fruit</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -836,7 +836,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/product_n6_s1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/product_n6_s1.jpg" class="img-fluid w-100 rounded-top" alt="Raisin brown (Obzhush) 1st class" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Dried Fruit</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -847,7 +847,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/product_n6_s2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/product_n6_s2.jpg" class="img-fluid w-100 rounded-top" alt="Raisin brown (Obzhush) 2nd grade" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Dried Fruit</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -858,7 +858,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/product_n7_s1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/product_n7_s1.jpg" class="img-fluid w-100 rounded-top" alt="Black currant (Soyaki) 1st class" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Dried Fruit</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -869,7 +869,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/product_n7_s2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/product_n7_s2.jpg" class="img-fluid w-100 rounded-top" alt="Black currant (Soyaki) 2nd class" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Dried Fruit</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -880,7 +880,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/product_n25.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/product_n25.jpg" class="img-fluid w-100 rounded-top" alt="Black currant (Kunaki) Premium variety" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Dried Fruit</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -891,7 +891,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/product_n25_s1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/product_n25_s1.jpg" class="img-fluid w-100 rounded-top" alt="Black currant (Kunaki) 1st class" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Dried Fruit</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -902,7 +902,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/product_n25_s2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/product_n25_s2.jpg" class="img-fluid w-100 rounded-top" alt="Black currant (Kunaki) 2nd class" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Dried Fruit</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -932,7 +932,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/spices_n1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/spices_n1.jpg" class="img-fluid w-100 rounded-top" alt="Sesame is white" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Spices</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -945,7 +945,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/spices_n2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/spices_n2.jpg" class="img-fluid w-100 rounded-top" alt="Pepper is bitter" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Spices</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -957,7 +957,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/spices_n3.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/spices_n3.jpg" class="img-fluid w-100 rounded-top" alt="Pepper mill is bitter" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Spices</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -969,7 +969,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/spices_n4.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/spices_n4.jpg" class="img-fluid w-100 rounded-top" alt="Peppermint is sweet" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Spices</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -981,7 +981,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/spices_n5.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/spices_n5.jpg" class="img-fluid w-100 rounded-top" alt="Pepper is sweet" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Spices</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -993,7 +993,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/spices_n6.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/spices_n6.jpg" class="img-fluid w-100 rounded-top" alt="Black cumin (Sedana)" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Spices</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -1021,7 +1021,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/spices_n7.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/spices_n7.jpg" class="img-fluid w-100 rounded-top" alt="Sesame seeds" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Spices</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -1032,7 +1032,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/spices_n8.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/spices_n8.jpg" class="img-fluid w-100 rounded-top" alt="Cumin" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Spices</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -1064,7 +1064,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/Peanut_Nuts_n1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/Peanut_Nuts_n1.jpg" class="img-fluid w-100 rounded-top" alt="Blanched peanuts (petals)" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Peanut</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -1077,7 +1077,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/Peanut_Nuts_n2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/Peanut_Nuts_n2.jpg" class="img-fluid w-100 rounded-top" alt="Blanched crushed peanuts premium 2-4/3-5 mm" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Peanut</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -1090,7 +1090,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/Peanut_Nuts_n3.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/Peanut_Nuts_n3.jpg" class="img-fluid w-100 rounded-top" alt="Peanuts in shell" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Peanut</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -1103,7 +1103,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/Peanut_Nuts_n4.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/Peanut_Nuts_n4.jpg" class="img-fluid w-100 rounded-top" alt="Peanuts, shelled (for butter)" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Peanut</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -1116,7 +1116,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/Peanut_Nuts_n5.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/Peanut_Nuts_n5.jpg" class="img-fluid w-100 rounded-top" alt="Peeled blanched peanuts 38/42" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Peanut</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -1129,7 +1129,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/Peanut_Nuts_n6.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/Peanut_Nuts_n6.jpg" class="img-fluid w-100 rounded-top" alt="Peeled blanched roasted peanuts 38/42" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Peanut</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -1142,7 +1142,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/Peanut_Nuts_n7.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/Peanut_Nuts_n7.jpg" class="img-fluid w-100 rounded-top" alt="Peanuts, shelled and roasted 38/42" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Peanut</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -1155,7 +1155,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/Peanut_Nuts_n8.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/Peanut_Nuts_n8.jpg" class="img-fluid w-100 rounded-top" alt="Peanut flour" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Peanut</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -1176,7 +1176,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/Peanut_Nuts_n15.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/Peanut_Nuts_n15.jpg" class="img-fluid w-100 rounded-top" alt="Peanut 1 variety" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Peanut</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -1205,7 +1205,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/Peanut_Nuts_n9.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/Peanut_Nuts_n9.jpg" class="img-fluid w-100 rounded-top" alt="Italian Pecan Nut, not peeled" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Nut</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -1218,7 +1218,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/Peanut_Nuts_n10.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/Peanut_Nuts_n10.jpg" class="img-fluid w-100 rounded-top" alt="Italian Pecan Nut, Shelled" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Nut</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -1231,7 +1231,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/Peanut_Nuts_n11.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/Peanut_Nuts_n11.jpg" class="img-fluid w-100 rounded-top" alt="Unshelled walnuts" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Nut</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -1244,7 +1244,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/Peanut_Nuts_n12.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/Peanut_Nuts_n12.jpg" class="img-fluid w-100 rounded-top" alt="Walnuts, shelled" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Nut</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -1257,7 +1257,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/Peanut_Nuts_n13.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/Peanut_Nuts_n13.jpg" class="img-fluid w-100 rounded-top" alt="Apricot kernel Premium grade" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Nut</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -1281,7 +1281,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/Peanut_Nuts_n14.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/Peanut_Nuts_n14.jpg" class="img-fluid w-100 rounded-top" alt="Almonds" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Nut</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -1295,7 +1295,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/Peanut_Nuts_n16.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/Peanut_Nuts_n16.jpg" class="img-fluid w-100 rounded-top" alt="apricot kernel 1 variety" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Nut</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -1308,7 +1308,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/Peanut_Nuts_n17.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/Peanut_Nuts_n17.jpg" class="img-fluid w-100 rounded-top" alt="Nut butterfly" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Nut</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -1339,7 +1339,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/groats_n1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/groats_n1.jpg" class="img-fluid w-100 rounded-top" alt="Mung bean (all varieties)" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Groats</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -1352,7 +1352,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/groats_n2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/groats_n2.jpg" class="img-fluid w-100 rounded-top" alt="Roasted chickpeas" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Groats</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -1364,7 +1364,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/groats_n3.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/groats_n3.jpg" class="img-fluid w-100 rounded-top" alt="Chickpeas Iranian" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Groats</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -1376,7 +1376,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/groats_n4.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/groats_n4.jpg" class="img-fluid w-100 rounded-top" alt="Chickpea Star" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Groats</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -1388,7 +1388,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/groats_n5.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/groats_n5.jpg" class="img-fluid w-100 rounded-top" alt="Chickpeas half" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Groats</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -1400,7 +1400,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/groats_n6.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/groats_n6.jpg" class="img-fluid w-100 rounded-top" alt="Millet" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Groats</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -1412,7 +1412,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/groats_n7.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/groats_n7.jpg" class="img-fluid w-100 rounded-top" alt="White beans" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Groats</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -1424,7 +1424,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/groats_n8.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/groats_n8.jpg" class="img-fluid w-100 rounded-top" alt="Red beans" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Groats</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -1436,7 +1436,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/dry_fruits/groats_n9.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="img/dry_fruits/groats_n9.jpg" class="img-fluid w-100 rounded-top" alt="Black beans" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Groats</div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -1464,7 +1464,7 @@
                     <div class="col-md-6 col-lg-4">
                         <a href="#">
                             <div class="service-item bg-secondary rounded border border-secondary">
-                                <img src="img/dry_fruits/dry_fruits.jpg" class="img-fluid rounded-top w-100" alt="">
+                                <img src="img/dry_fruits/dry_fruits.jpg" class="img-fluid rounded-top w-100" alt="high quality dried fruit" loading="lazy" decoding="async">
                                 <div class="px-4 rounded-bottom">
                                     <div class="service-content bg-primary text-center p-4 rounded">
                                         <!-- <h5 class="text-white">high quality dried fruit</h5> -->
@@ -1477,7 +1477,7 @@
                     <div class="col-md-6 col-lg-4">
                         <a href="#">
                             <div class="service-item bg-dark rounded border border-dark">
-                                <img src="img/dry_fruits/spices_main.jpeg" class="img-fluid rounded-top w-100" alt="">
+                                <img src="img/dry_fruits/spices_main.jpeg" class="img-fluid rounded-top w-100" alt="Tasty Fruits" loading="lazy" decoding="async">
                                 <div class="px-4 rounded-bottom">
                                     <div class="service-content bg-light text-center p-4 rounded">
                                         <!-- <h5 class="text-primary">Tasty Fruits</h5> -->
@@ -1490,7 +1490,7 @@
                     <div class="col-md-6 col-lg-4">
                         <a href="#">
                             <div class="service-item bg-primary rounded border border-primary">
-                                <img src="img/dry_fruits/Peanut_Nuts_main.jpg" class="img-fluid rounded-top w-100" alt="">
+                                <img src="img/dry_fruits/Peanut_Nuts_main.jpg" class="img-fluid rounded-top w-100" alt="Exotic Vegitable" loading="lazy" decoding="async">
                                 <div class="px-4 rounded-bottom">
                                     <div class="service-content bg-secondary text-center p-4 rounded">
                                         <!-- <h5 class="text-white">Exotic Vegitable</h5> -->
@@ -1514,7 +1514,7 @@
 
                     <div class="border border-primary rounded position-relative vesitable-item">
                         <div class="vesitable-img">
-                            <img src="img/dry_fruits/product_n1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            <img src="img/dry_fruits/product_n1.jpg" class="img-fluid w-100 rounded-top" alt="Dried apricot (all varieties)" loading="lazy" decoding="async">
                         </div>
                         <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Dried Fruit</div>
                         <div class="p-4 rounded-bottom">
@@ -1525,7 +1525,7 @@
                     </div>
                     <div class="border border-primary rounded position-relative vesitable-item">
                         <div class="vesitable-img">
-                            <img src="img/dry_fruits/product_n2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            <img src="img/dry_fruits/product_n2.jpg" class="img-fluid w-100 rounded-top" alt="Dried plum (with pits)" loading="lazy" decoding="async">
                         </div>
                         <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Dried Fruit</div>
                         <div class="p-4 rounded-bottom">
@@ -1536,7 +1536,7 @@
                     </div>
                     <div class="border border-primary rounded position-relative vesitable-item">
                         <div class="vesitable-img">
-                            <img src="img/dry_fruits/product_n3.jpg" class="img-fluid w-100 rounded-top bg-light" alt="">
+                            <img src="img/dry_fruits/product_n3.jpg" class="img-fluid w-100 rounded-top bg-light" alt="Yellow raisins (Golden hybrid) 1st grade" loading="lazy" decoding="async">
                         </div>
                         <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Dried Fruit</div>
                         <div class="p-4 rounded-bottom">
@@ -1547,7 +1547,7 @@
                     </div>
                     <div class="border border-primary rounded position-relative vesitable-item">
                         <div class="vesitable-img">
-                            <img src="img/dry_fruits/spices_n1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            <img src="img/dry_fruits/spices_n1.jpg" class="img-fluid w-100 rounded-top" alt="Sesame is white" loading="lazy" decoding="async">
                         </div>
                         <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Spices</div>
                         <div class="p-4 rounded-bottom">
@@ -1558,7 +1558,7 @@
                     </div>
                     <div class="border border-primary rounded position-relative vesitable-item">
                         <div class="vesitable-img">
-                            <img src="img/dry_fruits/spices_n2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            <img src="img/dry_fruits/spices_n2.jpg" class="img-fluid w-100 rounded-top" alt="Pepper is bitter" loading="lazy" decoding="async">
                         </div>
                         <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Spices</div>
                         <div class="p-4 rounded-bottom">
@@ -1569,7 +1569,7 @@
                     </div>
                     <div class="border border-primary rounded position-relative vesitable-item">
                         <div class="vesitable-img">
-                            <img src="img/dry_fruits/spices_n3.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            <img src="img/dry_fruits/spices_n3.jpg" class="img-fluid w-100 rounded-top" alt="Pepper mill is bitter" loading="lazy" decoding="async">
                         </div>
                         <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Spices</div>
                         <div class="p-4 rounded-bottom">
@@ -1580,7 +1580,7 @@
                     </div>
                     <div class="border border-primary rounded position-relative vesitable-item">
                         <div class="vesitable-img">
-                            <img src="img/dry_fruits/Peanut_Nuts_n1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            <img src="img/dry_fruits/Peanut_Nuts_n1.jpg" class="img-fluid w-100 rounded-top" alt="Blanched peanuts (petals)" loading="lazy" decoding="async">
                         </div>
                         <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Peanut & Nuts</div>
                         <div class="p-4 rounded-bottom">
@@ -1591,7 +1591,7 @@
                     </div>
                     <div class="border border-primary rounded position-relative vesitable-item">
                         <div class="vesitable-img">
-                            <img src="img/dry_fruits/Peanut_Nuts_n2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            <img src="img/dry_fruits/Peanut_Nuts_n2.jpg" class="img-fluid w-100 rounded-top" alt="Blanched crushed peanuts premium 2-4/3-5 mm" loading="lazy" decoding="async">
                         </div>
                         <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Peanut & Nuts</div>
                         <div class="p-4 rounded-bottom">
@@ -1602,7 +1602,7 @@
                     </div>
                     <div class="border border-primary rounded position-relative vesitable-item">
                         <div class="vesitable-img">
-                            <img src="img/dry_fruits/Peanut_Nuts_n10.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            <img src="img/dry_fruits/Peanut_Nuts_n10.jpg" class="img-fluid w-100 rounded-top" alt="Italian Pecan Nut, Shelled" loading="lazy" decoding="async">
                         </div>
                         <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Peanut & Nuts</div>
                         <div class="p-4 rounded-bottom">
@@ -1613,7 +1613,7 @@
                     </div>
                     <div class="border border-primary rounded position-relative vesitable-item">
                         <div class="vesitable-img">
-                            <img src="img/dry_fruits/groats_n1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            <img src="img/dry_fruits/groats_n1.jpg" class="img-fluid w-100 rounded-top" alt="Mung bean (all varieties)" loading="lazy" decoding="async">
                         </div>
                         <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Groats</div>
                         <div class="p-4 rounded-bottom">
@@ -1624,7 +1624,7 @@
                     </div>
                     <div class="border border-primary rounded position-relative vesitable-item">
                         <div class="vesitable-img">
-                            <img src="img/dry_fruits/groats_n2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            <img src="img/dry_fruits/groats_n2.jpg" class="img-fluid w-100 rounded-top" alt="Roasted chickpeas" loading="lazy" decoding="async">
                         </div>
                         <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Groats</div>
                         <div class="p-4 rounded-bottom">
@@ -1635,7 +1635,7 @@
                     </div>
                     <div class="border border-primary rounded position-relative vesitable-item">
                         <div class="vesitable-img">
-                            <img src="img/dry_fruits/groats_n3.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            <img src="img/dry_fruits/groats_n3.jpg" class="img-fluid w-100 rounded-top" alt="Chickpeas Iranian" loading="lazy" decoding="async">
                         </div>
                         <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Groats</div>
                         <div class="p-4 rounded-bottom">
@@ -2034,8 +2034,8 @@
                         </div>
                         <div class="col-lg-7">
                             <form action="" class="">
-                                <input type="text" class="w-100 form-control border-0 py-3 mb-4" placeholder="Your Name">
-                                <input type="email" class="w-100 form-control border-0 py-3 mb-4" placeholder="Enter Your Email">
+                                <input type="text" class="w-100 form-control border-0 py-3 mb-4" placeholder="Your Name" aria-label="Your Name">
+                                <input type="email" class="w-100 form-control border-0 py-3 mb-4" placeholder="Enter Your Email" aria-label="Enter Your Email">
                                 <textarea class="w-100 form-control border-0 mb-4" rows="5" cols="10" placeholder="Your Message"></textarea>
                                 <button class="w-100 btn form-control border-secondary py-3 bg-white text-primary " type="submit">Submit</button>
                             </form>
@@ -2083,14 +2083,14 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="position-relative mx-auto">
-                                <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="number" placeholder="Your Email">
+                                <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="number" placeholder="Your Email" aria-label="Your Email">
                                 <button type="submit" class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;">Subscribe Now</button>
                             </div>
                         </div>
                         <div class="col-lg-3">
                             <div class="d-flex justify-content-end pt-3">
-                                <a class="btn  btn-outline-secondary me-2 btn-md-square rounded-circle" href="https://www.instagram.com/hayotdriedfruit?igsh=MXM0dTQ4amJvbXJoMg=="><i class="fab fa-instagram"></i></a>
-                                <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href="https://t.me/hayotdriedfruit"><i class="fab fa-telegram"></i></a>
+                                <a class="btn  btn-outline-secondary me-2 btn-md-square rounded-circle" href="https://www.instagram.com/hayotdriedfruit?igsh=MXM0dTQ4amJvbXJoMg==" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href="https://t.me/hayotdriedfruit" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -2100,9 +2100,9 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="d-flex flex-column text-start footer-item">
                             <h4 class="text-light mb-3">Company Info</h4>
-                            <a class="btn-link" href="/lang/en/about.html">About Us</a>
-                            <a class="btn-link" href="/lang/en/products.html" >Products</a>
-                            <a class="btn-link" href="/lang/en/contact.html">Contact</a>
+                            <a class="btn-link" href="lang/en/about.html">About Us</a>
+                            <a class="btn-link" href="lang/en/products.html" >Products</a>
+                            <a class="btn-link" href="lang/en/contact.html">Contact</a>
                             <a class="btn-link" href="">FAQs & Help</a>
                         </div>
                     </div>
@@ -2131,6 +2131,9 @@
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                         <span class="text-light"><a href="https://hayotdriedfruit.uz"><i class="fas fa-copyright text-light me-2"></i>hayotdriedfruit.uz</a>, All right reserved.</span>
                     </div>
+                    <div class="col-md-6 my-auto text-center text-md-end text-light">
+                        Designed by <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -2139,7 +2142,7 @@
 
 
         <!-- Back to Top -->
-        <a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+        <a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top" aria-label="Back to top"><i class="fa fa-arrow-up"></i></a>   
 
         
     <!-- JavaScript Libraries -->

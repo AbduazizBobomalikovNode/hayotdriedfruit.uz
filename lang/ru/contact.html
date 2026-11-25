@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
     <head>
         <meta charset="utf-8">
@@ -52,7 +52,7 @@
             <div class="container px-0">
                 <nav class="navbar navbar-light bg-white navbar-expand-xl">
                     <a href="index.html" class="navbar-brand"><h1 class="text-primary display-6">Hayot Dried Fruit</h1></a>
-                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-label="Переключить навигацию" aria-controls="navbarCollapse" aria-expanded="false">
                         <span class="fa fa-bars text-primary"></span>
                     </button> 
                     <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
@@ -60,12 +60,12 @@
                             <a href="index.html" class="nav-item nav-link ">Главная</a>
                             <a href="products.html" class="nav-item nav-link">Продукты</a>
                             <a href="about.html" class="nav-item nav-link">О нас</a>
-                            <a href="contact.html" class="nav-item nav-link active" >Контакт</a>
+                            <a href="contact.html" class="nav-item nav-link active"  aria-current="page">Контакт</a>
                         </div>
-                        <div class="d-flex m-3 me-0">
-                            <button onclick="location.href = '../en/contact.html'" class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" >en</button>
-                            <button onclick="location.href = './contact.html'" class="btn-search btn border border-secondary btn-md-square rounded-circle bg-secondary me-4" data-bs-toggle="modal" >ru</button>
-                            <button onclick="location.href = '../uz/contact.html'" class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" >uz</button>
+                        <div class="d-flex m-3 me-0" role="group" aria-label="Язык">
+                            <button type="button" onclick="location.href = '../en/contact.html'" class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" lang="en" aria-label="English">en</button>
+                            <button type="button" onclick="location.href = './contact.html'" class="btn-search btn border border-secondary btn-md-square rounded-circle bg-secondary me-4" lang="ru" aria-label="Русский" aria-current="true">ru</button>
+                            <button type="button" onclick="location.href = '../uz/contact.html'" class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" lang="uz" aria-label="Oʻzbekcha">uz</button>
                             <!-- <a href="#" class="position-relative me-4 my-auto">
                                 <i class="fa fa-shopping-bag fa-2x"></i>
                                 <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
@@ -134,8 +134,8 @@
                         </div>
                         <div class="col-lg-7">
                             <form action="" class="">
-                                <input type="text" class="w-100 form-control border-0 py-3 mb-4" placeholder="Ваше имя">
-                                <input type="email" class="w-100 form-control border-0 py-3 mb-4" placeholder="Введите адрес электронной почты">
+                                <input type="text" class="w-100 form-control border-0 py-3 mb-4" placeholder="Ваше имя" aria-label="Ваше имя">
+                                <input type="email" class="w-100 form-control border-0 py-3 mb-4" placeholder="Введите адрес электронной почты" aria-label="Введите адрес электронной почты">
                                 <textarea class="w-100 form-control border-0 mb-4" rows="5" cols="10" placeholder="Ваше сообщение"></textarea>
                                 <button class="w-100 btn form-control border-secondary py-3 bg-white text-primary " type="submit">Представлять на рассмотрение</button>
                             </form>
@@ -187,14 +187,14 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="position-relative mx-auto">
-                                <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="number" placeholder="Ваш адрес электронной почты">
+                                <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="number" placeholder="Ваш адрес электронной почты" aria-label="Ваш адрес электронной почты">
                                 <button type="submit" class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;">Подпишись сейчас</button>
                             </div>
                         </div>
                         <div class="col-lg-3">
                             <div class="d-flex justify-content-end pt-3">
-                                <a class="btn  btn-outline-secondary me-2 btn-md-square rounded-circle" href="https://www.instagram.com/hayotdriedfruit?igsh=MXM0dTQ4amJvbXJoMg=="><i class="fab fa-instagram"></i></a>
-                                <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href="https://t.me/hayotdriedfruit"><i class="fab fa-telegram"></i></a>
+                                <a class="btn  btn-outline-secondary me-2 btn-md-square rounded-circle" href="https://www.instagram.com/hayotdriedfruit?igsh=MXM0dTQ4amJvbXJoMg==" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href="https://t.me/hayotdriedfruit" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -235,6 +235,9 @@
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                         <span class="text-light"><a href="https://hayotdriedfruit.uz"><i class="fas fa-copyright text-light me-2"></i>hayotdriedfruit.uz</a>, Все права защищены.</span>
                     </div>
+                    <div class="col-md-6 my-auto text-center text-md-end text-light">
+                        Designed by <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -243,7 +246,7 @@
 
 
         <!-- Back to Top -->
-        <a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+        <a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top" aria-label="Наверх"><i class="fa fa-arrow-up"></i></a>   
 
         
     <!-- JavaScript Libraries -->

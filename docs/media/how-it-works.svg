@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 300" width="880" height="300" role="img" aria-labelledby="t d">
+  <title id="t">Hayot Dried Fruit: sayt qanday ishlaydi</title>
+  <desc id="d">Brauzer GitHub Pages'dan statik HTML sahifani oladi. Uch til: en (bosh sahifa), ru va uz. Barcha sahifalar umumiy css, js, img va lib papkalaridan foydalanadi.</desc>
+  <style>
+    .box { fill: #ffffff; stroke: #81c408; stroke-width: 2; }
+    .lang { fill: #fff8e6; stroke: #ffb524; stroke-width: 2; }
+    .shared { fill: #f4f6f8; stroke: #9aa5a0; stroke-width: 1.5; }
+    .h { font: 600 16px 'Segoe UI', Arial, sans-serif; fill: #45595b; }
+    .s { font: 13px 'Segoe UI', Arial, sans-serif; fill: #747d88; }
+    .m { font: 12px ui-monospace, Consolas, monospace; fill: #45595b; }
+    .wire { stroke: #c6d3b0; stroke-width: 2; fill: none; }
+    .flow { stroke: #81c408; stroke-width: 3; fill: none; stroke-dasharray: 8 10; animation: dash 1.4s linear infinite; }
+    .pulse { fill: #81c408; animation: pulse 2.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .l2 { animation-delay: .4s; } .l3 { animation-delay: .8s; }
+    @keyframes dash { to { stroke-dashoffset: -36; } }
+    @keyframes pulse { 0%, 100% { opacity: .35; transform: scale(.8); } 50% { opacity: 1; transform: scale(1.15); } }
+    @media (prefers-reduced-motion: reduce) { .flow, .pulse { animation: none; } .pulse { opacity: 1; } }
+  </style>
+  <rect width="880" height="300" fill="#fbfdf7" rx="14"/>
+
+  <!-- Browser -->
+  <rect class="box" x="24" y="110" width="150" height="80" rx="12"/>
+  <text class="h" x="99" y="145" text-anchor="middle">Brauzer</text>
+  <text class="s" x="99" y="166" text-anchor="middle">telefon / kompyuter</text>
+
+  <!-- GitHub Pages -->
+  <rect class="box" x="234" y="110" width="170" height="80" rx="12"/>
+  <text class="h" x="319" y="145" text-anchor="middle">GitHub Pages</text>
+  <text class="m" x="319" y="166" text-anchor="middle">/hayotdriedfruit.uz/</text>
+
+  <path class="wire" d="M174 150 H234"/>
+  <path class="flow" d="M174 150 H234"/>
+  <path class="wire" d="M404 150 H444"/>
+  <path class="flow" d="M404 150 H444"/>
+
+  <!-- Language pages -->
+  <rect class="lang" x="444" y="40" width="200" height="60" rx="10"/>
+  <circle class="pulse" cx="464" cy="70" r="6"/>
+  <text class="h" x="480" y="66">en · bosh sahifa</text>
+  <text class="m" x="480" y="86">index.html, lang/en/*</text>
+
+  <rect class="lang" x="444" y="120" width="200" height="60" rx="10"/>
+  <circle class="pulse l2" cx="464" cy="150" r="6"/>
+  <text class="h" x="480" y="146">ru</text>
+  <text class="m" x="480" y="166">lang/ru/*.html</text>
+
+  <rect class="lang" x="444" y="200" width="200" height="60" rx="10"/>
+  <circle class="pulse l3" cx="464" cy="230" r="6"/>
+  <text class="h" x="480" y="226">uz</text>
+  <text class="m" x="480" y="246">lang/uz/*.html</text>
+
+  <path class="wire" d="M424 150 V70 H444 M424 150 V230 H444"/>
+
+  <!-- Shared assets -->
+  <path class="wire" d="M644 70 H672 M644 150 H672 M644 230 H672 M672 70 V230"/>
+  <path class="flow" d="M672 150 H690"/>
+  <rect class="shared" x="690" y="60" width="172" height="180" rx="12"/>
+  <text class="h" x="776" y="90" text-anchor="middle">Umumiy fayllar</text>
+  <text class="m" x="708" y="122">css/style.css</text>
+  <text class="m" x="708" y="146">js/main.js</text>
+  <text class="m" x="708" y="170">img/ (5.7 MB)</text>
+  <text class="m" x="708" y="194">lib/ (plaginlar)</text>
+  <text class="s" x="708" y="222">build yo'q</text>
+</svg>

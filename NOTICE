@@ -1,0 +1,35 @@
+NOTICE
+======
+
+Hayot Dried Fruit website (hayotdriedfruit.uz)
+
+This site is based on the "Fruitables" HTML template by HTML Codex
+(https://htmlcodex.com), licensed under the Creative Commons Attribution 4.0
+International license (CC BY 4.0). See LICENSE.txt in this repository for the
+license terms and the required attribution. The footer of each page carries the
+credit "Designed by HTML Codex" linking to https://htmlcodex.com.
+
+Third-party libraries bundled in lib/ (for example Owl Carousel, see
+lib/owlcarousel/LICENSE) keep their own licenses and are unchanged.
+
+Modifications made to the original template
+-------------------------------------------
+
+- Content, branding and layout adapted for Hayot Dried Fruit and Spices LLC,
+  with English (en), Russian (ru) and Uzbek (uz) versions of the pages.
+- Images in img/ recompressed in place (same file names): long edge capped,
+  JPEG quality reduced, metadata stripped; no references changed.
+- Root-absolute paths (href="/..." and src="/...") converted to relative paths
+  so the site works when served from a subpath (GitHub Pages project site).
+  Broken relative paths in pages/*.html and Russian page image references
+  were corrected.
+- The <html lang> attribute set per language (en, ru, uz).
+- Accessibility improvements: aria-label on icon-only links and buttons,
+  descriptive alt text for images, aria-current on active navigation links,
+  accessible language switcher, labels for inputs, loading="lazy" and
+  decoding="async" on below-the-fold images.
+- css/style.css: added visible :focus-visible outlines and a
+  prefers-reduced-motion block.
+- js/main.js: respects prefers-reduced-motion (no carousel autoplay, no animated
+  scroll) and adds accessible names to the carousel navigation buttons.
+- Footer credit "Designed by HTML Codex" added to every page that has a footer.
